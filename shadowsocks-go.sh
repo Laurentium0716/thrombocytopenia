@@ -242,7 +242,7 @@ download_files(){
         mv -f shadowsocks-server-linux64-1.2.2 /usr/bin/shadowsocks-server
     else
         if ! wget -c https://dl.lamp.sh/shadowsocks/shadowsocks-server-linux32-1.2.2.gz; then
-            echo -e "[${red}Error${plain}] Failed to download shadowsocks-server-linux32-1.2.1.gz"
+            echo -e "[${red}Error${plain}] Failed to download shadowsocks-server-linux32-1.2.2.gz"
             exit 1
         fi
         gzip -d shadowsocks-server-linux32-1.2.2.gz
